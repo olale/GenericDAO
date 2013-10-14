@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AAE51E4-30B7-423D-B944-ACEB32D74221}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenericDAO</RootNamespace>
+    <AssemblyName>GenericDAO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonExtensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\CommonExtensions\bin\Debug\CommonExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLib">
+      <HintPath>..\..\Bin\CommonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Fasterflect">
+      <HintPath>packages\fasterflect.2.1.0\lib\net40\Fasterflect.dll</HintPath>
+    </Reference>
+    <Reference Include="Omu.ValueInjecter">
+      <HintPath>packages\valueinjecter.2.3\lib\Omu.ValueInjecter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\MapByAttribute.cs" />
+    <Compile Include="Concurrent\ConcurrentList.cs" />
+    <Compile Include="Configuration\ISPConfigurator.cs" />
+    <Compile Include="Attributes\SPAttribute.cs" />
+    <Compile Include="Exceptions\AttributeMissingException.cs" />
+    <Compile Include="Attributes\ForeignKeyAttribute.cs" />
+    <Compile Include="Attributes\KeyAttribute.cs" />
+    <Compile Include="Attributes\ParamAttribute.cs" />
+    <Compile Include="Setup\SPSettings.cs" />
+    <Compile Include="Support\AppSettingConnectionFactory.cs" />
+    <Compile Include="Support\BaseInterceptor.cs" />
+    <Compile Include="Configuration\Configurator.cs" />
+    <Compile Include="Configuration\FieldMappingConfigurator.cs" />
+    <Compile Include="Configuration\IConfigurator.cs" />
+    <Compile Include="Exceptions\IllegalPropertyException.cs" />
+    <Compile Include="Configuration\IRelatedObjectConfigurator.cs" />
+    <Compile Include="Exceptions\MultipleValuesForPropertyException.cs" />
+    <Compile Include="Exceptions\NonUniquePropertyNameException.cs" />
+    <Compile Include="Exceptions\NonUniquePropertyTypeException.cs" />
+    <Compile Include="Core\Prefetcher.cs" />
+    <Compile Include="Exceptions\PropertyMissingException.cs" />
+    <Compile Include="Configuration\RelatedObjectConfigurator.cs" />
+    <Compile Include="Configuration\SingleValueSPConfigurator.cs" />
+    <Compile Include="Configuration\SPConfigurator.cs" />
+    <Compile Include="Exceptions\UnsupportedParameterException.cs" />
+    <Compile Include="Core\Dispatcher.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\SqlExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Exceptions\FieldsUnusedFromQueryException.cs" />
+    <Compile Include="Core\GenericDAO.cs" />
+    <Compile Include="Support\ClassMapping.cs" />
+    <Compile Include="Support\IConnectionFactory.cs" />
+    <Compile Include="Support\LazyLoadingProxyGenerationHook.cs" />
+    <Compile Include="Support\LazyLoadingInterceptor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exceptions\PropertyNotSetByQueryException.cs" />
+    <Compile Include="Support\StaffingRequirementDayActivityMapping.cs" />
+    <Compile Include="Support\StaffingRequirementDayKey.cs" />
+    <Compile Include="Support\ThreadSpecificConnectionFactory.cs" />
+    <Compile Include="Support\TimeCareAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>tf checkout "$(TargetDir)..\..\..\..\..\..\TimeCareDoctor\Binary\GenericDAO.dll"
+copy "$(TargetPath)" "$(TargetDir)..\..\..\..\..\..\TimeCareDoctor\Binary\GenericDAO.dll"
+tf checkout "$(TargetDir)..\..\..\..\Bin\GenericDAO.dll"
+copy "$(TargetPath)" "$(TargetDir)..\..\..\..\Bin\GenericDAO.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDAO", "GenericDAO.csproj", "{5AAE51E4-30B7-423D-B944-ACEB32D74221}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9136F40E-8957-4AD4-A033-FBBF7E588F00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5F28D75B-9BDA-4E90-A54B-6CFE3A056DB1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CommonLib", "..\..\CommonLib\CommonLib.vbproj", "{7C667766-36E1-4AC0-B632-888DBEE74DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonExtensions", "..\..\CommonExtensions\CommonExtensions.csproj", "{AFE2BAA2-CBB6-4F0F-8B9A-FC6455C728E5}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tctfs02:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GenericDAO.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Tests\\Tests.csproj
+		SccProjectName2 = Tests
+		SccLocalPath2 = Tests
+		SccProjectUniqueName3 = ..\\..\\CommonLib\\CommonLib.vbproj
+		SccProjectName3 = ../../CommonLib
+		SccLocalPath3 = ..\\..\\CommonLib
+		SccProjectUniqueName4 = ..\\..\\CommonExtensions\\CommonExtensions.csproj
+		SccProjectName4 = ../../CommonExtensions
+		SccLocalPath4 = ..\\..\\CommonExtensions
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = GenericDAO.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AAE51E4-30B7-423D-B944-ACEB32D74221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AAE51E4-30B7-423D-B944-ACEB32D74221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AAE51E4-30B7-423D-B944-ACEB32D74221}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5AAE51E4-30B7-423D-B944-ACEB32D74221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AAE51E4-30B7-423D-B944-ACEB32D74221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AAE51E4-30B7-423D-B944-ACEB32D74221}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F28D75B-9BDA-4E90-A54B-6CFE3A056DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F28D75B-9BDA-4E90-A54B-6CFE3A056DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F28D75B-9BDA-4E90-A54B-6CFE3A056DB1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F28D75B-9BDA-4E90-A54B-6CFE3A056DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F28D75B-9BDA-4E90-A54B-6CFE3A056DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F28D75B-9BDA-4E90-A54B-6CFE3A056DB1}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Debug|x86.ActiveCfg = Debug|x86
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Debug|x86.Build.0 = Debug|x86
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Release|x86.ActiveCfg = Release|x86
+		{7C667766-36E1-4AC0-B632-888DBEE74DD1}.Release|x86.Build.0 = Release|x86
+		{AFE2BAA2-CBB6-4F0F-8B9A-FC6455C728E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE2BAA2-CBB6-4F0F-8B9A-FC6455C728E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE2BAA2-CBB6-4F0F-8B9A-FC6455C728E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFE2BAA2-CBB6-4F0F-8B9A-FC6455C728E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE2BAA2-CBB6-4F0F-8B9A-FC6455C728E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE2BAA2-CBB6-4F0F-8B9A-FC6455C728E5}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

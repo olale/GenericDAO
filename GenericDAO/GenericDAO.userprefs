@@ -1,0 +1,62 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/GenericDAO.cs">
+    <Files>
+      <File FileName="DAOTest/Test.cs" Line="27" Column="4" />
+      <File FileName="Domain/Person.cs" Line="1" Column="1" />
+      <File FileName="Domain/Employment.cs" Line="1" Column="1" />
+      <File FileName="Core/Prefetcher.cs" Line="1" Column="1" />
+      <File FileName="Core/Dispatcher.cs" Line="1" Column="1" />
+      <File FileName="Support/LazyLoadingInterceptor.cs" Line="1" Column="1" />
+      <File FileName="Configuration/SPConfigurator.cs" Line="1" Column="1" />
+      <File FileName="Configuration/RelatedObjectConfigurator.cs" Line="1" Column="1" />
+      <File FileName="Configuration/FieldMappingConfigurator.cs" Line="27" Column="1" />
+      <File FileName="Configuration/IConfigurator.cs" Line="1" Column="1" />
+      <File FileName="Configuration/SingleValueSPConfigurator.cs" Line="1" Column="1" />
+      <File FileName="Configuration/Configurator.cs" Line="1" Column="1" />
+      <File FileName="Setup/SPSettings.cs" Line="22" Column="15" />
+      <File FileName="Support/BaseInterceptor.cs" Line="1" Column="1" />
+      <File FileName="Attributes/MapByAttribute.cs" Line="1" Column="1" />
+      <File FileName="Support/ClassMapping.cs" Line="1" Column="1" />
+      <File FileName="Extensions/ObjectExtensions.cs" Line="28" Column="19" />
+      <File FileName="Core/GenericDAO.cs" Line="27" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="DAOTest" expanded="True" />
+          <Node name="Domain" expanded="True" />
+          <Node name="GenericDAO" expanded="True">
+            <Node name="Attributes" expanded="True" />
+            <Node name="Configuration" expanded="True" />
+            <Node name="Core" expanded="True">
+              <Node name="GenericDAO.cs" selected="True" />
+            </Node>
+            <Node name="Domain" expanded="True" />
+            <Node name="Exceptions" expanded="True" />
+            <Node name="Extensions" expanded="True" />
+            <Node name="Properties" expanded="True" />
+            <Node name="Setup" expanded="True" />
+            <Node name="Support" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
